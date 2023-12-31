@@ -3,5 +3,11 @@
 </head>
 <body>
   <a>你好<a>
-  <img src="/img/lappland.png"/>
+    <img src="/img/lappland.png" />
+    <script>
+    function ipJson(ipJson) {
+      console.log('获取到的网络IP',ipJson);
+    }
+    </script>
+    <script src="//whois.pconline.com.cn/ipJson.jsp?callback=ipJson" type="text/javascript"></script>
 </body>
