@@ -2,12 +2,13 @@
   <title>这里是chggu</title>
 </head>
 <body>
-  <a>你好<a>
+    <a>你好</a>
     <img src="/img/lappland.png" />
-    <script>
-    function ipJson(ipJson) {
-      console.log('获取到的网络IP',ipJson);
-    }
+    <script type="application/javascript">
+        function getIP(json) {
+          console.log('ipify获取到的网络IP',json.ip);
+        }
     </script>
-    <script src="//whois.pconline.com.cn/ipJson.jsp?callback=ipJson" type="text/javascript"></script>
+
+    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </body>
